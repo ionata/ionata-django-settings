@@ -11,6 +11,8 @@ class DRF:
     """Base configuration for our drf webapps."""
 
     SWAGGER_SETTINGS = {'api_version': '1'}
+    LOGIN_URL = '/backend/api/v1/login/'
+    LOGIN_REDIRECT_URL = '/backend/api/v1/'
 
     @property
     def INSTALLED_APPS(self):

@@ -158,7 +158,6 @@ class Base(Configuration):
         return self.CORS_ORIGIN_WHITELIST
 
     # URLs
-    LOGIN_URL = '/backend/login/'
     MEDIA_URL = '/assets/media/'
     STATIC_URL = '/assets/static/'
 
