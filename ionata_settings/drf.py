@@ -10,7 +10,6 @@ _auth = 'minimal_user.drf.serializers'
 class DRF:
     """Base configuration for our drf webapps."""
 
-    SWAGGER_SETTINGS = {'api_version': '1'}
     LOGIN_URL = '/backend/api/v1/login/'
     LOGIN_REDIRECT_URL = '/backend/api/v1/'
 
@@ -19,7 +18,6 @@ class DRF:
         return super().INSTALLED_APPS + [
             'rest_framework',
             'rest_framework.authtoken',
-            'rest_framework_swagger',
             'rest_auth',
             'allauth',
             'allauth.account',
