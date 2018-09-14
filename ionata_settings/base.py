@@ -242,7 +242,7 @@ class Dev(Base):
     AWS_AUTO_CREATE_BUCKET = True
 
     # Email
-    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
     # Services
     CELERY_BROKER_URL = values.Value(
