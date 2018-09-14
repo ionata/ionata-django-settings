@@ -1,4 +1,6 @@
 # DEV
+# 0.0.3
+- Change Dev to use console email backend
 # 0.0.2
 * Remove swagger
 * Move `login_url` configuration to DRF settings
