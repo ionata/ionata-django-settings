@@ -160,6 +160,9 @@ class Base(Configuration):
     # Celery
     CELERY_BROKER_TRANSPORT_OPTIONS = {'visibility_timeout': 3600}  # 1 hour.
     CELERY_RESULT_BACKEND = 'django-db'
+    CELERY_TIMEZONE = 'UTC'
+    CELERY_ENABLE_UTC = True
+    CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers:DatabaseScheduler'
 
     @property
     def CELERY_APP_NAME(self):

@@ -1,4 +1,5 @@
 # DEV
+- Update celery config for beat scheduler
 - Remove default custom aws domain
 # 0.0.3
 - Change Dev to use console email backend
