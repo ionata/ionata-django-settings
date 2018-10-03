@@ -4,7 +4,7 @@
 # 0.0.3
 - Change Dev to use console email backend
 # 0.0.2
-* Remove swagger
-* Move `login_url` configuration to DRF settings
+- Remove swagger
+- Move `login_url` configuration to DRF settings
 # 0.0.1
 - Initial upload
