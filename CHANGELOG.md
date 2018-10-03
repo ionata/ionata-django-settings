@@ -1,4 +1,5 @@
 # DEV
+- Remove default custom aws domain
 # 0.0.3
 - Change Dev to use console email backend
 # 0.0.2

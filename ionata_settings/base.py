@@ -50,10 +50,6 @@ class Base(Configuration):
     AWS_ACCESS_KEY_ID = values.SecretValue()
     AWS_SECRET_ACCESS_KEY = values.SecretValue()
 
-    @property
-    def AWS_S3_CUSTOM_DOMAIN(self):
-        return self.URL.hostname
-
     # Core
     DEBUG = False
 
