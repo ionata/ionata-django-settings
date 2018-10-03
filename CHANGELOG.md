@@ -1,4 +1,5 @@
 # DEV
+# 0.0.4
 - Update celery config for beat scheduler
 - Remove default custom aws domain
 # 0.0.3
