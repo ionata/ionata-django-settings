@@ -1,4 +1,5 @@
 # DEV
+- Add django-configurations as a dependency
 # 0.0.4
 - Update celery config for beat scheduler
 - Remove default custom aws domain
