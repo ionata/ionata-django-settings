@@ -1,4 +1,6 @@
 # DEV
+- Include port in AWS_S3_CUSTOM_DOMAIN if specified
+- Add django-configurations as a dependency
 # 0.0.4
 - Update celery config for beat scheduler
 - Remove default custom aws domain

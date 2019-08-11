@@ -221,7 +221,7 @@ class Dev(Base):
 
     @property
     def AWS_S3_CUSTOM_DOMAIN(self):
-        return values.Value(self.URL.hostname)
+        return values.Value(self.URL.netloc)
 
     # Core
     @property
