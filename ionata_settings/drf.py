@@ -31,7 +31,7 @@ class DRF:
             'rest_framework.permissions.IsAuthenticatedOrReadOnly',
         ],
         'DEFAULT_AUTHENTICATION_CLASSES': [
-            'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+            'rest_framework.authentication.TokenAuthentication',
             'rest_framework.authentication.BasicAuthentication',
             'rest_framework.authentication.SessionAuthentication',
         ],
@@ -47,11 +47,6 @@ class DRF:
     ACCOUNT_USER_MODEL_USERNAME_FIELD = None
     ACCOUNT_USERNAME_REQUIRED = False
     ACCOUNT_REGISTRATION = 'enabled'
-    REST_USE_JWT = True
-    JWT_AUTH = {
-        'JWT_EXPIRATION_DELTA': timedelta(hours=24),
-        'JWT_AUTH_HEADER_PREFIX': 'Token',
-    }
     REST_AUTH_SERIALIZERS = {
         'USER_DETAILS_SERIALIZER': f'{_auth}.UserDetailsSerializer',
         'PASSWORD_RESET_SERIALIZER': f'{_auth}.PasswordResetSerializer',
