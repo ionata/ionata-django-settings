@@ -1,4 +1,6 @@
 # DEV
+# 0.0.5
+- Remove jwt
 - Include port in AWS_S3_CUSTOM_DOMAIN if specified
 - Add django-configurations as a dependency
 # 0.0.4
