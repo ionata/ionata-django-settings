@@ -1,4 +1,5 @@
 # DEV
+- Make AWS_S3_SECURE_URLS .env configurable in Dev
 # 0.0.5
 - Remove jwt
 - Include port in AWS_S3_CUSTOM_DOMAIN if specified

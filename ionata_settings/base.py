@@ -1,5 +1,5 @@
-from urllib.parse import urlparse
 from typing import List, Tuple
+from urllib.parse import urlparse
 
 from configurations import Configuration, values  # type: ignore
 
@@ -218,6 +218,7 @@ class Dev(Base):
     AWS_S3_ENDPOINT_URL = values.Value('http://minio:9000')
     AWS_ACCESS_KEY_ID = values.Value('djangos3')
     AWS_SECRET_ACCESS_KEY = values.Value('djangos3')
+    AWS_S3_SECURE_URLS = values.BooleanValue(True)
 
     @property
     def AWS_S3_CUSTOM_DOMAIN(self):
